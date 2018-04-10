@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IXDF604SIA
+D IC GATE DVR 4A DIFF 8-SOIC
+K Driver, Dual MOSFET
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf
+$ENDCMP
+#
+$CMP IXDI604SIA
+D Dual 1.5A-Peak Low-Side MOSFET Driver
+K Driver, Dual MOSFET
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf
+$ENDCMP
+#
+$CMP MIC4428
+D Dual 1.5A-Peak Low-Side MOSFET Driver
+K Driver, Dual MOSFET
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf
+$ENDCMP
+#
+$CMP MIC4480
+D Dual 1.5A-Peak Low-Side MOSFET Driver
+K Driver, Dual MOSFET
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic4426.pdf
+$ENDCMP
+#
+#End Doc Library
