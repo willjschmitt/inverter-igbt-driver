@@ -1,0 +1,767 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:inverter-igbt-driver
+LIBS:inverter-igbt-driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C4
+U 1 1 5AD97D83
+P 6300 2300
+F 0 "C4" H 6325 2400 50  0000 L CNN
+F 1 "10u" H 6325 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6338 2150 50  0001 C CNN
+F 3 "" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5AD97D8A
+P 6300 1650
+F 0 "C3" H 6325 1750 50  0000 L CNN
+F 1 "10u" H 6325 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6338 1500 50  0001 C CNN
+F 3 "" H 6300 1650 50  0001 C CNN
+	1    6300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5AD97D91
+P 5500 1850
+F 0 "C2" H 5525 1950 50  0000 L CNN
+F 1 "10u" H 5525 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5538 1700 50  0001 C CNN
+F 3 "" H 5500 1850 50  0001 C CNN
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D2
+U 1 1 5AD97D98
+P 6050 1850
+F 0 "D2" H 6050 1950 50  0000 C CNN
+F 1 "D_Schottky" H 6050 1750 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 6050 1850 50  0001 C CNN
+F 3 "" H 6050 1850 50  0001 C CNN
+	1    6050 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 5AD97D9F
+P 6050 1450
+F 0 "D1" H 6050 1550 50  0000 C CNN
+F 1 "D_Schottky" H 6050 1350 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 6050 1450 50  0001 C CNN
+F 3 "" H 6050 1450 50  0001 C CNN
+	1    6050 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D3
+U 1 1 5AD97DA6
+P 6050 2550
+F 0 "D3" H 6050 2650 50  0000 C CNN
+F 1 "D_Schottky" H 6050 2450 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 6050 2550 50  0001 C CNN
+F 3 "" H 6050 2550 50  0001 C CNN
+	1    6050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 5AD97DAD
+P 3600 2850
+F 0 "#PWR9" H 3600 2600 50  0001 C CNN
+F 1 "GND" H 3600 2700 50  0000 C CNN
+F 2 "" H 3600 2850 50  0001 C CNN
+F 3 "" H 3600 2850 50  0001 C CNN
+	1    3600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +24V #PWR8
+U 1 1 5AD97DB3
+P 3600 1750
+F 0 "#PWR8" H 3600 1600 50  0001 C CNN
+F 1 "+24V" H 3600 1890 50  0000 C CNN
+F 2 "" H 3600 1750 50  0001 C CNN
+F 3 "" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L IXDF604SIA U2
+U 1 1 5AD97DB9
+P 3600 2300
+F 0 "U2" H 3500 2700 50  0000 R CNN
+F 1 "IXDF604SIA" H 3500 1900 50  0000 R CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3600 2000 50  0001 C CNN
+F 3 "" H 3600 2000 50  0001 C CNN
+	1    3600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NE555 U1
+U 1 1 5AD97DC0
+P 2250 2500
+F 0 "U1" H 1850 2850 50  0000 L CNN
+F 1 "NE555" H 2350 2850 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2250 2500 50  0001 C CNN
+F 3 "" H 2250 2500 50  0001 C CNN
+	1    2250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR5
+U 1 1 5AD97DC7
+P 2250 1850
+F 0 "#PWR5" H 2250 1700 50  0001 C CNN
+F 1 "+5V" H 2250 1990 50  0000 C CNN
+F 2 "" H 2250 1850 50  0001 C CNN
+F 3 "" H 2250 1850 50  0001 C CNN
+	1    2250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5AD97DCD
+P 2250 3000
+F 0 "#PWR6" H 2250 2750 50  0001 C CNN
+F 1 "GND" H 2250 2850 50  0000 C CNN
+F 2 "" H 2250 3000 50  0001 C CNN
+F 3 "" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AD97DD3
+P 1400 2100
+F 0 "R1" V 1480 2100 50  0000 C CNN
+F 1 "1.5k" V 1400 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1330 2100 50  0001 C CNN
+F 3 "" H 1400 2100 50  0001 C CNN
+	1    1400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AD97DDA
+P 1400 2450
+F 0 "C1" H 1425 2550 50  0000 L CNN
+F 1 "0.01u" H 1425 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1438 2300 50  0001 C CNN
+F 3 "" H 1400 2450 50  0001 C CNN
+	1    1400 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 1600 0    60   ~ 0
+Generates 48kHz Square Wave\nf = 1.44 / (2 * 1.5k * 0.01u) = 48k
+Text Notes 3750 1650 0    60   ~ 0
+24V Square Wave @ 48kHz
+Text Notes 4350 3350 0    60   ~ 0
+XFMR Provides HV Isolation\nTurns ratio reduces 24V to 8V VDD\n\nPrimary Windings are 115V (2 in parallel)\nSecondary Windings are 24V (2 in series)\nEffective Turns Ratio == 115:48 == 2.4
+Text Notes 7700 1500 0    60   ~ 0
+Greinacher voltage doubler\nDoubles and rectifies secondary voltage
+Text Notes 7700 2350 0    60   ~ 0
+Rectifies voltage on negative swing
+Text Label 7650 1250 0    60   ~ 0
+VSS_IGBT
+Text Label 7650 2550 0    60   ~ 0
+VDD_IGBT
+Text Label 7650 2050 0    60   ~ 0
+VE_IGBT
+$Comp
+L C C5
+U 1 1 5AD97DE9
+P 6550 1650
+F 0 "C5" H 6575 1750 50  0000 L CNN
+F 1 "10u" H 6575 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6588 1500 50  0001 C CNN
+F 3 "" H 6550 1650 50  0001 C CNN
+	1    6550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5AD97DF0
+P 6800 1650
+F 0 "C7" H 6825 1750 50  0000 L CNN
+F 1 "10u" H 6825 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6838 1500 50  0001 C CNN
+F 3 "" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 5AD97DF7
+P 7050 1650
+F 0 "C9" H 7075 1750 50  0000 L CNN
+F 1 "10u" H 7075 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7088 1500 50  0001 C CNN
+F 3 "" H 7050 1650 50  0001 C CNN
+	1    7050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5AD97DFE
+P 7300 1650
+F 0 "C11" H 7325 1750 50  0000 L CNN
+F 1 "10u" H 7325 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7338 1500 50  0001 C CNN
+F 3 "" H 7300 1650 50  0001 C CNN
+	1    7300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5AD97E05
+P 6550 2300
+F 0 "C6" H 6575 2400 50  0000 L CNN
+F 1 "10u" H 6575 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6588 2150 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 5AD97E0C
+P 6800 2300
+F 0 "C8" H 6825 2400 50  0000 L CNN
+F 1 "10u" H 6825 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6838 2150 50  0001 C CNN
+F 3 "" H 6800 2300 50  0001 C CNN
+	1    6800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5AD97E13
+P 7050 2300
+F 0 "C10" H 7075 2400 50  0000 L CNN
+F 1 "10u" H 7075 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7088 2150 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5AD97E1A
+P 7300 2300
+F 0 "C12" H 7325 2400 50  0000 L CNN
+F 1 "10u" H 7325 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7338 2150 50  0001 C CNN
+F 3 "" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 1100 0    60   ~ 0
++15/-8V Power Supply for IGBT Driver\n
+$Comp
+L TEST TP1
+U 1 1 5AD97E22
+P 2950 2150
+F 0 "TP1" H 3050 2300 50  0000 C BNN
+F 1 "TEST" H 2950 2400 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 2950 2150 50  0001 C CNN
+F 3 "" H 2950 2150 50  0001 C CNN
+	1    2950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 5AD97E29
+P 4450 2000
+F 0 "TP2" H 4550 2150 50  0000 C BNN
+F 1 "TEST" H 4500 2250 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP3
+U 1 1 5AD97E30
+P 4450 2500
+F 0 "TP3" H 4550 2650 50  0000 C BNN
+F 1 "TEST" H 4500 2750 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP6
+U 1 1 5AD97E37
+P 5750 2500
+F 0 "TP6" H 5850 2650 50  0000 C BNN
+F 1 "TEST" H 5750 2750 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 5750 2500 50  0001 C CNN
+F 3 "" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP7
+U 1 1 5AD97E3E
+P 7500 1200
+F 0 "TP7" H 7600 1350 50  0000 C BNN
+F 1 "TEST" H 7600 1450 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 7500 1200 50  0001 C CNN
+F 3 "" H 7500 1200 50  0001 C CNN
+	1    7500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP8
+U 1 1 5AD97E45
+P 7500 2000
+F 0 "TP8" H 7600 2150 50  0000 C BNN
+F 1 "TEST" H 7600 2250 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 7500 2000 50  0001 C CNN
+F 3 "" H 7500 2000 50  0001 C CNN
+	1    7500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP9
+U 1 1 5AD97E4C
+P 7500 2500
+F 0 "TP9" H 7600 2650 50  0000 C BNN
+F 1 "TEST" H 7600 2750 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 7500 2500 50  0001 C CNN
+F 3 "" H 7500 2500 50  0001 C CNN
+	1    7500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transformer_2P_2S U6
+U 1 1 5AD97E53
+P 5100 2150
+F 0 "U6" H 5100 1650 60  0000 C CNN
+F 1 "Transformer_2P_2S" H 5100 2400 60  0000 C CNN
+F 2 "inverter-igbt-driver:FS48-050-C2" H 5100 2150 60  0001 C CNN
+F 3 "" H 5100 2150 60  0001 C CNN
+	1    5100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5AD97E5A
+P 2950 2600
+F 0 "R5" V 3030 2600 50  0000 C CNN
+F 1 "1k" V 2950 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2880 2600 50  0001 C CNN
+F 3 "" H 2950 2600 50  0001 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5AD97E61
+P 2950 2800
+F 0 "#PWR7" H 2950 2550 50  0001 C CNN
+F 1 "GND" H 2950 2650 50  0000 C CNN
+F 2 "" H 2950 2800 50  0001 C CNN
+F 3 "" H 2950 2800 50  0001 C CNN
+	1    2950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FOD8316 U3
+U 1 1 5AD9846B
+P 2550 4900
+F 0 "U3" H 2550 4450 60  0000 C CNN
+F 1 "FOD8316" H 2550 5350 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 2450 4950 60  0001 C CNN
+F 3 "" H 2450 4950 60  0001 C CNN
+	1    2550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR4
+U 1 1 5AD98472
+P 2000 4500
+F 0 "#PWR4" H 2000 4350 50  0001 C CNN
+F 1 "+5V" H 2000 4640 50  0000 C CNN
+F 2 "" H 2000 4500 50  0001 C CNN
+F 3 "" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5AD98478
+P 1900 5300
+F 0 "#PWR3" H 1900 5050 50  0001 C CNN
+F 1 "GND" H 1900 5150 50  0000 C CNN
+F 2 "" H 1900 5300 50  0001 C CNN
+F 3 "" H 1900 5300 50  0001 C CNN
+	1    1900 5300
+	1    0    0    -1  
+$EndComp
+Text Label 1650 4550 2    60   ~ 0
+VIN
+Text Label 1650 4950 2    60   ~ 0
+RESET
+Text Label 1650 5050 2    60   ~ 0
+FAULT
+Text Label 3150 5250 0    60   ~ 0
+VSS_IGBT
+Text Label 3100 4550 0    60   ~ 0
+VE_IGBT
+Text Label 3150 4850 0    60   ~ 0
+VDD_IGBT
+$Comp
+L R R3
+U 1 1 5AD98484
+P 3850 5050
+F 0 "R3" V 3930 5050 50  0000 C CNN
+F 1 "8" V 3850 5050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3780 5050 50  0001 C CNN
+F 3 "" H 3850 5050 50  0001 C CNN
+	1    3850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C13
+U 1 1 5AD9848B
+P 3550 4550
+F 0 "C13" H 3575 4650 50  0000 L CNN
+F 1 "100p" H 3575 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3588 4400 50  0001 C CNN
+F 3 "" H 3550 4550 50  0001 C CNN
+	1    3550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5AD98492
+P 3850 4750
+F 0 "R2" V 3930 4750 50  0000 C CNN
+F 1 "100" V 3850 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3780 4750 50  0001 C CNN
+F 3 "" H 3850 4750 50  0001 C CNN
+	1    3850 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L D D4
+U 1 1 5AD98499
+P 4200 4750
+F 0 "D4" H 4200 4850 50  0000 C CNN
+F 1 "D" H 4200 4650 50  0000 C CNN
+F 2 "inverter-igbt-driver:DO-214AC" H 4200 4750 50  0001 C CNN
+F 3 "" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	-1   0    0    1   
+$EndComp
+Text Notes 1950 4100 0    60   ~ 0
+IGBT Driver With Desaturation Fault Handling
+$Comp
+L TEST TP4
+U 1 1 5AD984A1
+P 4350 5000
+F 0 "TP4" H 4450 5000 50  0000 C BNN
+F 1 "TEST" H 4450 5100 50  0000 C CNN
+F 2 "inverter-igbt-driver:TP RCT (0805)" H 4350 5000 50  0001 C CNN
+F 3 "" H 4350 5000 50  0001 C CNN
+	1    4350 5000
+	1    0    0    -1  
+$EndComp
+Text HLabel 4550 4750 2    60   Input ~ 0
+COLL
+Text HLabel 4550 5050 2    60   Input ~ 0
+GATE
+Text HLabel 4550 5200 2    60   Input ~ 0
+EMIT
+Text HLabel 1250 4550 0    60   Input ~ 0
+VIN
+Text HLabel 1250 4950 0    60   Input ~ 0
+RESET
+Text HLabel 1250 5050 0    60   Input ~ 0
+FAULT
+Wire Wire Line
+	5400 2550 5900 2550
+Wire Wire Line
+	6200 2550 7650 2550
+Wire Wire Line
+	6300 2550 6300 2450
+Wire Wire Line
+	6300 1800 6300 2150
+Wire Wire Line
+	5400 2050 7650 2050
+Wire Wire Line
+	6050 2050 6050 2000
+Connection ~ 6050 2050
+Wire Wire Line
+	6050 1600 6050 1700
+Wire Wire Line
+	6050 1650 5500 1650
+Wire Wire Line
+	5500 1650 5500 1700
+Connection ~ 6050 1650
+Wire Wire Line
+	5500 2000 5500 2550
+Connection ~ 5500 2550
+Wire Wire Line
+	6300 1500 6300 1250
+Wire Wire Line
+	6050 1250 7650 1250
+Wire Wire Line
+	6050 1250 6050 1300
+Connection ~ 6300 2050
+Wire Wire Line
+	4200 2200 4400 2200
+Wire Wire Line
+	4400 2200 4400 2050
+Wire Wire Line
+	4400 2050 4750 2050
+Wire Wire Line
+	4400 2550 4750 2550
+Wire Wire Line
+	4400 2550 4400 2400
+Wire Wire Line
+	4400 2400 4200 2400
+Wire Wire Line
+	3600 2800 3600 2850
+Wire Wire Line
+	3600 1750 3600 1800
+Wire Wire Line
+	3000 2200 2950 2200
+Wire Wire Line
+	2950 2150 2950 2450
+Wire Wire Line
+	2950 2400 3000 2400
+Wire Wire Line
+	2250 1850 2250 2100
+Wire Wire Line
+	2250 2900 2250 3000
+Wire Wire Line
+	1700 2700 1750 2700
+Wire Wire Line
+	1400 1900 2800 1900
+Wire Wire Line
+	1700 1900 1700 2700
+Connection ~ 2950 2300
+Wire Wire Line
+	1750 2500 1650 2500
+Wire Wire Line
+	1650 2500 1650 2950
+Connection ~ 2250 1900
+Wire Wire Line
+	1400 2950 2250 2950
+Connection ~ 2250 2950
+Wire Wire Line
+	2750 2700 2800 2700
+Wire Wire Line
+	2800 2700 2800 3200
+Wire Wire Line
+	2800 3200 1600 3200
+Wire Wire Line
+	1600 3200 1600 2300
+Wire Wire Line
+	1400 2300 1750 2300
+Wire Wire Line
+	2750 2500 2800 2500
+Wire Wire Line
+	2800 2500 2800 1900
+Connection ~ 1600 2300
+Wire Wire Line
+	1400 2250 1400 2300
+Connection ~ 1400 2300
+Connection ~ 2800 2500
+Wire Wire Line
+	1400 2600 1400 2950
+Connection ~ 1650 2950
+Wire Wire Line
+	1400 1950 1400 1900
+Connection ~ 1700 1900
+Wire Wire Line
+	2750 2300 2950 2300
+Wire Wire Line
+	7300 1250 7300 1500
+Connection ~ 6300 1250
+Wire Wire Line
+	7050 1500 7050 1250
+Connection ~ 7050 1250
+Wire Wire Line
+	6800 1250 6800 1500
+Connection ~ 6800 1250
+Wire Wire Line
+	6550 1500 6550 1250
+Connection ~ 6550 1250
+Wire Wire Line
+	7300 1800 7300 2150
+Wire Wire Line
+	6550 1800 6550 2150
+Connection ~ 6550 2050
+Wire Wire Line
+	6800 1800 6800 2150
+Connection ~ 6800 2050
+Wire Wire Line
+	7050 1800 7050 2150
+Connection ~ 7050 2050
+Connection ~ 7300 2050
+Connection ~ 7300 1250
+Connection ~ 6300 2550
+Wire Wire Line
+	7300 2450 7300 2550
+Connection ~ 7300 2550
+Wire Wire Line
+	7050 2450 7050 2550
+Connection ~ 7050 2550
+Wire Wire Line
+	6800 2450 6800 2550
+Connection ~ 6800 2550
+Wire Wire Line
+	6550 2450 6550 2550
+Connection ~ 6550 2550
+Wire Wire Line
+	5750 2500 5750 2550
+Connection ~ 5750 2550
+Wire Wire Line
+	4450 2050 4450 2000
+Connection ~ 4450 2050
+Wire Wire Line
+	4450 2550 4450 2500
+Connection ~ 4450 2550
+Connection ~ 2950 2200
+Wire Wire Line
+	7500 1250 7500 1200
+Connection ~ 7500 1250
+Wire Wire Line
+	7500 2050 7500 2000
+Connection ~ 7500 2050
+Wire Wire Line
+	7500 2500 7500 2550
+Connection ~ 7500 2550
+Wire Wire Line
+	4750 2350 4700 2350
+Wire Wire Line
+	4700 2350 4700 2050
+Connection ~ 4700 2050
+Wire Wire Line
+	4750 2250 4650 2250
+Wire Wire Line
+	4650 2250 4650 2550
+Connection ~ 4650 2550
+Wire Wire Line
+	5400 2350 5450 2350
+Wire Wire Line
+	5450 2350 5450 2250
+Wire Wire Line
+	5450 2250 5400 2250
+Connection ~ 2950 2400
+Wire Wire Line
+	2950 2750 2950 2800
+Wire Wire Line
+	1900 4650 1900 5300
+Wire Wire Line
+	1900 4650 2050 4650
+Wire Wire Line
+	2000 4500 2000 4750
+Wire Wire Line
+	2000 4750 2050 4750
+Wire Wire Line
+	1250 4550 2050 4550
+Wire Wire Line
+	1250 4950 2050 4950
+Wire Wire Line
+	1250 5050 2050 5050
+Wire Wire Line
+	2050 5250 1900 5250
+Connection ~ 1900 5250
+Wire Wire Line
+	3050 5150 3100 5150
+Wire Wire Line
+	3100 5150 3100 5250
+Wire Wire Line
+	3050 5250 3150 5250
+Connection ~ 3100 5250
+Wire Wire Line
+	3050 4950 3100 4950
+Wire Wire Line
+	3100 4950 3100 4850
+Wire Wire Line
+	3050 4850 3150 4850
+Connection ~ 3100 4850
+Wire Wire Line
+	3050 5050 3700 5050
+Wire Wire Line
+	3250 4400 3250 5200
+Wire Wire Line
+	4000 5050 4550 5050
+Wire Wire Line
+	3050 4750 3700 4750
+Wire Wire Line
+	4550 4750 4350 4750
+Wire Wire Line
+	4000 4750 4050 4750
+Wire Wire Line
+	3250 5200 4550 5200
+Wire Wire Line
+	3550 4750 3550 4700
+Connection ~ 3550 4750
+Wire Wire Line
+	3550 4400 3250 4400
+Connection ~ 3250 4550
+Wire Wire Line
+	3050 4550 3250 4550
+Wire Wire Line
+	4350 5000 4350 5050
+Connection ~ 4350 5050
+Wire Wire Line
+	2050 4850 1900 4850
+Connection ~ 1900 4850
+$EndSCHEMATC
