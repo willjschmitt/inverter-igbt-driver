@@ -65,11 +65,11 @@ Text Label 2850 2150 0    60   ~ 0
 Text Label 2850 2250 0    60   ~ 0
 +24V
 Text Label 2850 2450 0    60   ~ 0
-FAULT
+FAULT_H
 Text Label 2850 2550 0    60   ~ 0
-RESET
+RESET_H
 Text Label 2850 2350 0    60   ~ 0
-VIN
+VIN_H
 Text Notes 2200 1750 0    60   ~ 0
 Incoming header for IO and Power Supply
 $Comp
@@ -182,11 +182,11 @@ F6 "RESET" I L 5100 2500 60
 F7 "FAULT" I L 5100 2650 60 
 $EndSheet
 Text Label 4900 2350 2    60   ~ 0
-VIN
+VIN_H
 Text Label 4900 2500 2    60   ~ 0
-RESET
+RESET_H
 Text Label 4900 2650 2    60   ~ 0
-FAULT
+FAULT_H
 Wire Wire Line
 	4900 2350 5100 2350
 Wire Wire Line
@@ -194,11 +194,11 @@ Wire Wire Line
 Wire Wire Line
 	4900 2650 5100 2650
 Text Label 6300 2350 0    60   ~ 0
-COLL
+COLL_H
 Text Label 6300 2500 0    60   ~ 0
-GATE
+GATE_H
 Text Label 6300 2650 0    60   ~ 0
-EMIT
+EMIT_H
 Wire Wire Line
 	6100 2350 6950 2350
 Wire Wire Line
@@ -364,12 +364,12 @@ Wire Wire Line
 	2450 3500 2450 3550
 Connection ~ 2450 3550
 $Comp
-L IGBT_HALF_BRIDGE U?
+L IGBT_HALF_BRIDGE U9
 U 1 1 5ADAB658
 P 7500 3000
-F 0 "U?" H 8350 4200 60  0000 C CNN
+F 0 "U9" H 8350 4200 60  0000 C CNN
 F 1 "IGBT_HALF_BRIDGE" H 7700 4200 60  0000 C CNN
-F 2 "" H 7700 2950 60  0001 C CNN
+F 2 "inverter-igbt-driver:MG06600WB-BN4MM" H 7700 2950 60  0001 C CNN
 F 3 "" H 7700 2950 60  0001 C CNN
 	1    7500 3000
 	1    0    0    -1  
