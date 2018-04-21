@@ -282,8 +282,6 @@ F 3 "" H 2650 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 3600 3050 3600
-Wire Wire Line
 	3050 3700 2850 3700
 Wire Wire Line
 	3050 3800 2850 3800
@@ -322,17 +320,6 @@ F 3 "" H 2650 4500 50  0001 C CNN
 $EndComp
 Text Notes 1200 4050 0    60   ~ 0
 Pull-Up/Down Resistors
-$Comp
-L TEST TP10
-U 1 1 5ADA812D
-P 2750 3600
-F 0 "TP10" H 2850 3750 50  0000 C BNN
-F 1 "TEST" H 2850 3850 50  0000 C CNN
-F 2 "inverter-igbt-driver:TP RCT (0805)" H 2750 3600 50  0001 C CNN
-F 3 "" H 2750 3600 50  0001 C CNN
-	1    2750 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 4000 3050 4000
 Wire Wire Line
@@ -417,4 +404,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 3550 6400 2550
 Connection ~ 6400 2550
+Wire Wire Line
+	3050 3600 2850 3600
 $EndSCHEMATC
