@@ -150,13 +150,7 @@ $EndComp
 Wire Wire Line
 	1650 2000 1650 2050
 Wire Wire Line
-	1250 2000 1450 2000
-Wire Wire Line
-	1450 2000 1550 2000
-Wire Wire Line
-	1550 2000 1650 2000
-Wire Wire Line
-	1650 2000 1850 2000
+	1250 2000 1850 2000
 Wire Wire Line
 	1850 2000 1850 2050
 Wire Wire Line
@@ -289,9 +283,7 @@ F 3 "" H 9650 2750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 2450 8600 2800
-Wire Wire Line
-	8600 2800 8600 3150
+	8600 2450 8600 3150
 Wire Wire Line
 	8900 2800 8600 2800
 Connection ~ 8600 2800
@@ -316,13 +308,9 @@ F2 "SQUARE_H" I R 5550 2450 60
 F3 "SQUARE_L" I R 5550 2550 60 
 $EndSheet
 Wire Wire Line
-	5550 2450 6450 2450
+	5550 2450 7050 2450
 Wire Wire Line
-	6450 2450 7050 2450
-Wire Wire Line
-	5550 2550 6400 2550
-Wire Wire Line
-	6400 2550 7050 2550
+	5550 2550 7050 2550
 Wire Wire Line
 	7050 3450 6450 3450
 Wire Wire Line
@@ -365,9 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 3250 2550 3300
 Wire Wire Line
-	2550 3300 2650 3300
-Wire Wire Line
-	2650 3300 2750 3300
+	2550 3300 2750 3300
 Wire Wire Line
 	2750 3300 2750 3250
 Wire Wire Line
