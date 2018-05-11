@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:inverter-igbt-driver-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -118,14 +119,14 @@ L C C1
 U 1 1 5ADB781C
 P 4600 4150
 F 0 "C1" H 4625 4250 50  0000 L CNN
-F 1 "0.01u" H 4700 4150 50  0000 L CNN
+F 1 "0.001n" H 4700 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4638 4000 50  0001 C CNN
 F 3 "" H 4600 4150 50  0001 C CNN
 	1    4600 4150
 	1    0    0    -1  
 $EndComp
 Text Notes 3250 2850 0    60   ~ 0
-Generates 100kHz Square Wave\nf = 1 / (2.1 * 5k * 1n) = 95kHz
+Generates 100kHz Square Wave\nf = 1 / (2.1 * 5.6k * 1n) = 85kHz
 Text Notes 7500 3000 0    60   ~ 0
 24V Square Wave @ 48kHz
 $Comp
@@ -192,7 +193,7 @@ L R R11
 U 1 1 5AF44B07
 P 4600 3750
 F 0 "R11" V 4680 3750 50  0000 C CNN
-F 1 "1.5k" V 4600 3750 50  0000 C CNN
+F 1 "5.6k" V 4600 3750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 3750 50  0001 C CNN
 F 3 "" H 4600 3750 50  0001 C CNN
 	1    4600 3750
@@ -269,9 +270,11 @@ Wire Wire Line
 Wire Wire Line
 	4750 3300 4750 3950
 $Comp
-L 74LVC1G80GV U4
+L 74LVC1G80GV-RESCUE-inverter-igbt-driver U4
 U 1 1 5AF20A3C
 P 5700 3550
+AR Path="/5AF20A3C" Ref="U4"  Part="1" 
+AR Path="/5ADB7652/5AF20A3C" Ref="U4"  Part="1" 
 F 0 "U4" H 5700 3250 60  0000 C CNN
 F 1 "74LVC1G80GV" H 5700 3850 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-353_SC-70-5_Handsoldering" H 5700 3550 60  0001 C CNN
@@ -290,7 +293,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 3350 5300 3350
 Text Notes 5250 3050 0    60   ~ 0
-Frequency Divider Ensures\nPure 50% Duty Cycle\n95kHz/2 = 48kHz
+Frequency Divider Ensures\nPure 50% Duty Cycle\n85kHz/2 = 43kHz
 $Comp
 L +5V #PWR012
 U 1 1 5AF20F92
